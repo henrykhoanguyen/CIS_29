@@ -1,0 +1,15 @@
+ <Product>
+  <Name>Antacids</Name>
+  <Barcode>100001001000010011000010110100001001101001000001001100000011001001000110</Barcode>
+  <Price>10.88</Price>
+ </Product>
+ <Product>
+  <Name>Carrots</Name>
+  <Barcode>101001000100001001100000110100000110100010010000010110001000110</Barcode>
+  <Price>8.22</Price>
+ </Product>
+ <Product>
+  <Name>Cinnamon</Name>
+  <Barcode>101001000001001100000010011000010011100001001101000010100010010000010011</Barcode>
+  <Price>3.28</Price>
+ </Product>

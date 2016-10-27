@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>290</y>
+      <w>230</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Customer
+--
+-CustomerGoods: list&lt;string&gt;
+-custItemQuantity: list&lt;string&gt;
+--
++Customer()
++getGoods():string
++setGoods(): void
++sortGoods(list&lt;string&gt;): void
++setItemQuantity():void
++lookUpProduct(string): string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>440</x>
+      <y>730</y>
+      <w>230</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>BarCode
+--
+-custBarCode: list&lt;string&gt;
+-itemsCode: list&lt;string&gt;
+--
++BarCode
++readFile(): void
++checkFile(): boolean
++setItemCode(string):void
++setBarCode(): void
++checkBarCode(string):void
++checkItem(string): void
++sortItemCode(list&lt;string&gt;): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>0</y>
+      <w>250</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>ItemQueue
+--
+-itemQueue: queue&lt;string&gt;
+-custQueue: queue&lt;string&gt;
+-removedQueueItem: queue&lt;string&gt;
+--
++ItemQueue()
++setItem(string):void
++getItem(): string
++getQueueSize(): int
++lookUpProduct(string): string
++removeCustItem(string): boolean
++undoRemove(string):boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>620</x>
+      <y>0</y>
+      <w>250</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>ItemStack
+--
+-itemStack: stack&lt;string&gt;
+-custStack: stack&lt;string&gt;
+-removedStackItem: stack&lt;string&gt;
+--
++ItemStack()
++setItem(string):void
++getItem(): string
++getStackSize(): int
++insertProduct(): boolean
++lookUpProduct(string): string
++removeCustItem(string): boolean
++undoRemove(string):boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>500</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Decrypting
+--
+-alphabet: list&lt;char&gt;
+-barCode: list&lt;string&gt;
+--
++Decrypting()
++readCode3of9(): void
++checkFile(): boolean
++barToAlpha(): list&lt;string&gt;
++bitToDec(): list&lt;string&gt;
++barToBit(): list&lt;string&gt;
++bitsToBar(): list&lt;string&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>620</x>
+      <y>280</y>
+      <w>230</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Storages
+--
+-goods: list&lt;string&gt;
+-price: list&lt;double&gt;
+--
++Storages()
++getGoods():string
++getPrice():double
++setGoods(string): void
++setprice(double): void
++sortByGoods(list&lt;string&gt;): boolean
++sortByPrice(list&lt;string&gt;): boolean
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>210</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>200</y>
+      <w>30</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>200</y>
+      <w>330</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;310.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>210</y>
+      <w>310</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>290.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>460</y>
+      <w>210</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>460</y>
+      <w>220</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>200.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>680</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+</diagram>

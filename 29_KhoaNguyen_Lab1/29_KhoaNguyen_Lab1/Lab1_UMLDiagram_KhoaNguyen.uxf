@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.2">
+  <zoom_level>16</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>320</x>
+      <y>224</y>
+      <w>384</w>
+      <h>256</h>
+    </coordinates>
+    <panel_attributes>MorseCode
+--
+-bitCode: vector&lt;string&gt;
+-morseCode: vector&lt;char&gt;
+--
++MorseCode()
++~MorseCode()
++setBitCode(vector&lt;string&gt;):void
++getMorse():char
++getBitCode():vector&lt;string&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>736</x>
+      <y>224</y>
+      <w>384</w>
+      <h>256</h>
+    </coordinates>
+    <panel_attributes>Alphabet
+--
+-alphabet: vector&lt;char&gt;
+--
++Alphabet()
++~Alphabet()
++getAlpha():char
++getUniqueChar():char
++lowerCaseConverter():char
++upperCaseConverter():char</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>576</y>
+      <w>304</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>Translator
+--
+-enMessage: string
+-deMessage: string
+--
++Translator()
++~Translator()
++getEncryptedText():void
++getMorse():void
++getMessage():string
++setMessages(string):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>512</x>
+      <y>464</y>
+      <w>240</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>912</x>
+      <y>160</y>
+      <w>48</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>736</x>
+      <y>0</y>
+      <w>384</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>UniChar
+--
+-uniqueChar: vector&lt;char&gt;
+--
++UniChar()
++~UniChar()
++getUniqueChar():char
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>704</x>
+      <y>464</y>
+      <w>240</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+</diagram>

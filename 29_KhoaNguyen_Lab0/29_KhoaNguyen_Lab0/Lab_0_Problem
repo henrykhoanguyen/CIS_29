@@ -1,0 +1,37 @@
+Lab 0
+
+Purpose:  Design a program using Object Oriented Design Techniques.
+
+Create a console application to convert US Measurement System to Metric Units and Metric Units to US Measurement System, for the following:
+
+•	Distance
+•	Weight
+•	Volume
+
+Before starting to code, submit within 5 days a UML Class Diagram of your proposed solution.
+See the video Tutorial on producing a UML diagram if you haven't used UML before.
+Design your program from a data-centric (Object Oriented Design), rather than code-centric (procedural) perspective.  
+
+First, your program should prompt the user for input, compute the conversions and output the results.
+
+Notes:  
+
+
+1 inch = 2.54 centimeters
+1 foot = 12 inches
+1 mile = 5280 feet
+1 centimeter = 1 / 2.54 inches
+1 meter = 100 centimeters 
+1 kilometer = 1000 meters
+
+Weight
+1 ounce = 28.375 grams
+1 pound = 16 ounces
+1 gram = 1 / 28.375 ounces
+1 kilogram = 1000 grams
+
+Volume
+1 ounce = 29.57353 milliliters
+1 gallon = 128 ounces
+1 milliliter = 1 / 29.57353 ounces
+1 liter = 1000 milliliters

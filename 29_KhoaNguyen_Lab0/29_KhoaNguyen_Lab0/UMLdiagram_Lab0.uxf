@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.2">
+  <zoom_level>15</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>30</y>
+      <w>315</w>
+      <h>285</h>
+    </coordinates>
+    <panel_attributes>Distance
+--
+-foot: double
+-inch: double
+-mile: double
+-centimeter: double
+-meter: double
+-kilometer: double
+--
++Distance()
++~Distance()
++getValue(): Obj</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>825</x>
+      <y>330</y>
+      <w>315</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>Calculation
+--
+-convertee: double
+-converted: double
+--
++Calculation()
++~Calculation()
++setConvertee(): void
++setConverted(): void
++getConvertee(): double
++getConverted(): double
++checkMeasurement(): Obj
++Convertion(): double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>135</y>
+      <w>495</w>
+      <h>345</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;310.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>330</y>
+      <w>315</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Weight
+--
+-ounce: double
+-pound: double
+-gram: double
+-kilogram: double
+--
++Weight()
++~Weight()
++getValue(): Obj</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>585</y>
+      <w>315</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Volume
+--
+-ounce: double
+-gallon: double
+-milliliter: double
+-liter: double
+--
++Volume()
++~Volume()
++getValue(): Obj</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>435</y>
+      <w>495</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;310.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>435</y>
+      <w>495</w>
+      <h>315</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;190.0;310.0;10.0</additional_attributes>
+  </element>
+</diagram>
